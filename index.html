@@ -13,9 +13,9 @@
     <script src="https://kit.fontawesome.com/63a5a3c7ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="sticky-top">
         <!-- navigation bar start -->
-        <nav class="container navbar navbar-expand-lg ">
+        <nav class="container navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
               <a class="navbar-brand fs-3 fw-bold" href="#">Global Tech</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,8 @@
             </div>
           </nav>
         <!-- navigation bar end -->
+    </header>
+    <main>
         <section class="container mb-5">
             <!-- carosel start  -->
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -60,8 +62,8 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="images/cover/cover-1.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption h-75">
+                    <img src="images/cover/cover-3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption h-75" id="carosel">
                         <h5 class="display-4 text-white fw-bolder">Get Started Digital <br> Learning</h5>
                       <p class="mb-3 text-white w-75 mx-auto">A learning method based on the use of new digital tools to enable learners to learn in a different way.</p>
                       <button class="btn btn-primary" type="submit">Get Started</button>  
@@ -70,15 +72,15 @@
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="images/cover/cover-2.jpg" class="d-block w-100 img-fluid" alt="...">
                     <div class="carousel-caption h-75">
-                        <h5 class="display-4 text-white fw-bolder">You can be a<br> leader</h5>
+                        <h5 class="display-4 text-white fw-bolder">You Can Be A<br> Leader</h5>
                         <p class="mb-3 text-white w-75 mx-auto">A learning method based on the use of new digital tools to enable learners to learn in a different way.</p>
                         <button class="btn btn-primary" type="submit">Get Started</button>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="images/cover/cover-3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="images/cover/cover-1.jpg" class="d-block w-100 img-fluid" alt="...">
                     <div class="carousel-caption h-75">
-                        <h5 class="display-4 text-white fw-bolder">Start learning and be<br> optimistic</h5>
+                        <h5 class="display-4 text-white fw-bolder">Achieve Your Goal</h5>
                         <p class="mb-3 text-white w-75 mx-auto">A learning method based on the use of new digital tools to enable learners to learn in a different way.</p>
                         <button class="btn btn-primary" type="submit">Get Started</button>
                     </div>
@@ -93,10 +95,8 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            </section>
-            <!-- carosel end -->
-    </header>
-    <main>
+        </section>
+        <!-- carosel end -->
         <!-- course area start  -->
         <section class="container pt-5" >
             <div class="text-center pt-5 w-50 mx-auto">
@@ -142,7 +142,7 @@
                             </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="col-lg-6 col-md-12 col-sm-12 col-12  d-none d-lg-block">
                         <div class=" border d-flex w-100 flex-lg-row flex-md-row flex-sm-column flex-column">
                             <div class="w-50 pe-3">
                                 <img class="img-fluid w-100" src="images/course/course-4.png" alt="">
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="col-lg-6 col-md-12 col-sm-12 col-12  d-none d-lg-block">
                         <div class=" border d-flex w-100 flex-lg-row flex-md-row flex-sm-column flex-column">
                             <div class="w-50 pe-3">
                                 <img class="img-fluid w-100" src="images/course/course-5.png" alt="">
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="col-lg-6 col-md-12 col-sm-12 col-12  d-none d-lg-block">
                         <div class=" border d-flex w-100 flex-lg-row flex-md-row flex-sm-column flex-column">
                             <div class="w-50 pe-3">
                                 <img class="img-fluid w-100" src="images/course/course-6.png" alt="">
@@ -187,13 +187,13 @@
         </section>
         <!-- course area end -->
         <!-- modal part start -->
-        <section class="container bg-primary d-flex flex-lg-row flex-md-column flex-sm-column flex-column align-items-center justify-content-center my-5" id="register">
-            <div class="w-50 p-5 text-white">
+        <section class="container bg-primary d-flex flex-lg-row flex-md-column flex-sm-column flex-column align-items-center justify-content-center my-5 w-100" id="register">
+            <div class="text-white w-50 ">
                 <h2 class="pb-4">Ready to join?</h2>
                 <p>It is a long established fact that a reader will be distracted by the
                     readable content of a page when looking at its layout.</p>
             </div>
-            <div class="w-50 p-5 text-center">
+            <div class="w-25 text-center">
                 <button type="button" class="btn btn-outline-white text-primary bg-white px-3" data-bs-toggle="modal" data-bs-target="#myModal">Register Now</button>
                 <div class="modal" id="myModal">
                     <div class="modal-dialog">
@@ -294,20 +294,20 @@
         <!-- company list start -->
         <section class="container py-5 d-none d-lg-block">
             <div class="w-75 mx-auto text-center pb-3"><h1 class="fw-bolder">Trusted by over 800+ companies</h1></div>
-            <div class="mx-auto d-flex pb-5">
-                <div class="me-5"><img src="images/company/company-1.png" alt=""></div>
-                <div class="me-5"><img src="images/company/company-2.png" alt=""></div>
-                <div class="me-5"><img src="images/company/company-3.png" alt=""></div>
-                <div class="me-5"><img src="images/company/company-4.png" alt=""></div>
-                <div class="me-5"><img src="images/company/company-5.png" alt=""></div>
-                <div class="me-5"><img src="images/company/company-6.png" alt=""></div>
+            <div class="d-flex pb-5 w-75 mx-auto">
+                <div><img class="img-fluid w-75" src="images/company/company-1.png" alt=""></div>
+                <div><img class="img-fluid w-75" src="images/company/company-2.png" alt=""></div>
+                <div><img class="img-fluid w-75" src="images/company/company-3.png" alt=""></div>
+                <div><img class="img-fluid w-75" src="images/company/company-4.png" alt=""></div>
+                <div><img class="img-fluid w-75" src="images/company/company-5.png" alt=""></div>
+                <div><img class="img-fluid w-75" src="images/company/company-6.png" alt=""></div>
             </div>
         </section>
         <!-- company list end -->
     </main>
     <!-- Footer start  -->
     <footer class="bg-dark text-white text-center p-5" id="about">
-        <div class="w-50 mx-auto">
+        <div class="w-75 mx-auto">
             <h1>Global Tech</h1>
         <p>House No-20,Uttara sector-4</p>
         <p>Uttara,Dhaka,Bangladesh</p>
