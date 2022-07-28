@@ -1,5 +1,5 @@
 .carousel-caption{
-    bottom: 100px;
+    height: auto;
 }
 .carousel-item img{
     opacity: 0.5;
