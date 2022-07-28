@@ -1,0 +1,9 @@
+.carousel-caption{
+    bottom: 100px;
+}
+.carousel-item img{
+    opacity: 0.5;
+}
+.carousel-item{
+    background-color: black;
+}
