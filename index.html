@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <!-- css link   -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/63a5a3c7ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -27,19 +29,19 @@
                     <a class="nav-link active text-secondary pe-5" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#">Courses</a>
+                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#courses">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#">Deals</a>
+                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#deal">Deals</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active text-secondary pe-5" aria-current="page" href="#">Success</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#">About</a>
+                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#">Register</a>
+                    <a class="nav-link active text-secondary pe-5" aria-current="page" href="#register">Register</a>
                   </li>
                  
                 </ul>
@@ -98,12 +100,12 @@
     </header>
     <main>
         <!-- course area start  -->
-        <section class="container pt-5">
+        <section class="container pt-5" >
             <div class="text-center pt-5 w-50 mx-auto">
                 <h2 class=" fs-1 fw-bold">Discover Our Popular <br> Courses</h2>
                 <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
-            <div class="pt-5">
+            <div class="pt-5" id="courses">
                 <div>
                     <div class="row g-3">
                       <div class="col-6">
@@ -187,7 +189,7 @@
         </section>
         <!-- course area end -->
         <!-- modal part start -->
-        <section class="container bg-primary d-flex align-items-center justify-content-center">
+        <section class="container bg-primary d-flex align-items-center justify-content-center my-5" id="register">
             <div class="w-50 p-5 text-white">
                 <h2 class="pb-4">Ready to join?</h2>
                 <p>It is a long established fact that a reader will be distracted by the
@@ -218,7 +220,7 @@
                                         <label class="form-level">Type Your Comment:</label>
                                         <textarea class="form-control"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-info">Submit</button>
+                                    <button type="submit" class="btn btn-info text-white">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -229,9 +231,93 @@
         </section>
         <!-- modal part start-->
         <!-- Question part start-->
-
+         <section class="container py-5" id="deal">
+            <div class="w-50 mx-auto text-center">
+                <h1 class="fw-bolder pb-3">Frequently Asked Questions</h1>
+                <p class="pb-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="w-75 mx-auto">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-bold fs-5 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are the main differences between Flexbox and grid?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-secondary">
+                          <strong>The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column.</strong> Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed  fw-bold fs-5 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What are the main differences between Bootstrap and Tailwind?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-secondary">
+                          <strong>To create an interface between computers and people, developers use front-end frameworks. These frameworks are designed and developed to create sites for people.</strong> 
+                          The main difference between Bootstrap and Tailwind is that Bootstrap pre-built components that provide a responsive UI (user interface) kit. On the other hand, Tailwind comes with predesigned widgets that facilitate web developers to design a website from scratch. Both Bootstrap and Tailwind are two of the best front-end CSS framework used worldwide.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed  fw-bold fs-5 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What is CSS Box Model?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-secondary">
+                          <strong>The CSS Box Model is a term used for the container that wraps the following element properties within it.Margin,Border,Padding,Content,Height and Width</strong> <br> However, understanding the term “Box Model” makes more sense once it is visually displayed. See the example image below for a more straight breakdown of where these bullet points relate to your HTML content.
+                            As you can see from the image above, the content sits inside the box model. In this case, you have an example “p,” (or paragraph) element on display with the simple text “Udacity CSS Box Model Example” shown.  In the next few sections, each of these areas will be explained.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed  fw-bold fs-5 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          What is Semantic Tag?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body  text-secondary">
+                          <strong>Semantic tags clearly define the purpose of the HTML element. It also describes the type of content that the element should contain.</strong> <br> For example,header, footer,article are considered semantic elements as they clearly describe their purpose and the type of content they should enclose.
+                            New HTML5 semantic tags to structure the document in a meaningful way are: header,nav,article,section,aside,footer. <br> Semantic tags also help search engines to parse the webpage correctly and find accurate information. Thus, helping search engines to correctly index the page.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         </section>   
         <!-- Question part end -->
+        <!-- company list start -->
+        <section class="container py-5">
+            <div class="w-75 mx-auto text-center pb-3"><h1 class="fw-bolder">Trusted by over 800+ companies</h1></div>
+            <div class="mx-auto d-flex pb-5">
+                <div class="me-5"><img src="images/company/company-1.png" alt=""></div>
+                <div class="me-5"><img src="images/company/company-2.png" alt=""></div>
+                <div class="me-5"><img src="images/company/company-3.png" alt=""></div>
+                <div class="me-5"><img src="images/company/company-4.png" alt=""></div>
+                <div class="me-5"><img src="images/company/company-5.png" alt=""></div>
+                <div class="me-5"><img src="images/company/company-6.png" alt=""></div>
+            </div>
+        </section>
+        <!-- company list end -->
     </main>
+    <!-- Footer start  -->
+    <footer class="bg-dark text-white text-center p-5" id="about">
+        <div class="w-50 mx-auto">
+            <h1>Global Tech</h1>
+        <p>House No-20,Uttara sector-4</p>
+        <p>Uttara,Dhaka,Bangladesh</p>
+        <p><a class="text-decoration-none" href="">Privacy Policy</a> | <a class="text-decoration-none" href="">Terms Of Use</a></p>
+        <p class="pt-3"><a class="pe-3" href="instragram.com"><i class="fa-brands fa-instagram"></i></a><a class="pe-3" href="facebook.com"><i class="fa-brands fa-facebook"></i></a><a class="pe-3" href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a><a class="pe-3" href="linkdin.com"><i class="fa-brands fa-linkedin"></i></a></p>
+        </div>
+    </footer>
+    <!-- Footer end  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
