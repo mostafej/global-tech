@@ -6,6 +6,7 @@
     background-color: black;
 }
 #register{
-    height: 50vh;
+    min-height: 50vh;
+    padding: 30px 0;
 }
 
